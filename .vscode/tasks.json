@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build and run C",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "main.c",
+          "-o",
+          "main"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Compilação para arquivos C usando gcc"
+      }
+    ]
+  }
