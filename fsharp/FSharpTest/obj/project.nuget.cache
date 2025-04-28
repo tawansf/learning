@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FXjzSxiBCHE=",
+  "success": true,
+  "projectFilePath": "C:\\dev\\tutorials\\fsharp\\FSharpTest\\FSharpTest.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tawan\\.nuget\\packages\\fsharp.core\\9.0.202\\fsharp.core.9.0.202.nupkg.sha512"
+  ],
+  "logs": []
+}
