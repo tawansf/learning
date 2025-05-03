@@ -20,12 +20,12 @@ int main(int argc, char const *argv[])
 
     // Allocate
 
-    int *students;
+    int students;
     int qtyOfStudents = 12;
 
-    students = calloc(qtyOfStudents, sizeof(*students));
+    students = calloc(qtyOfStudents, sizeof(students));
 
-    printf("The quantity of bytes from students are: %lu", qtyOfStudents * sizeof(*students));
+    printf("The quantity of bytes from students are: %lu", qtyOfStudents * sizeof(students));
 
     return 0;
 }
