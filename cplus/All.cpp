@@ -20,7 +20,45 @@ int main()
     // Division(4, 2);
     // If(-1);
     // Switch(1);
-    While();
+    // While();
+
+    // Input and Output data
+    
+    /* int x, y;
+
+    cout << "Type X value... \n";
+    cin >> x;
+    cout << "Type Y value... \n";
+    cin >> y;
+
+    cout << "Area result is: " << Area(x, y); */
+
+    int age; // 2 or 4 bytes
+    float height; // 4 bytes
+    bool isActive; // 1 byte
+    double salary; // 8 bytes
+    string name; // 
+    char gender;
+
+    cout << "Your age: \n";
+    cin >> age;
+    cout << "Your name: \n";
+    cin >> name;
+    cout << "Working? \n";
+    cin >> isActive;
+    cout << "Salary pretension: \n";
+    cin >> salary;
+    cout << "Gender \n";
+    cin >> gender;
+
+
+    cout << "---------------------- \n";
+    cout << "Name: " << name << "\n";
+    cout << "Age: " << age << "\n";
+    cout << "Working: " << (isActive == true ? "Yes" : "No") << "\n";
+    cout << "Salary: " << salary << "\n";
+    cout << "Gender: " << gender << "\n";
+    cout << "---------------------- \n";
 
     return 0;
 }
