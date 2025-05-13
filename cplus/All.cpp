@@ -11,6 +11,25 @@ void If(int x);
 void Switch(int x);
 void While();
 
+struct Car {
+    int id;
+    string name;
+    string modelName;
+    string plate;
+    string year;
+    int serialNumber;
+    int numOfDoors;
+    string color;
+    VehicleType type;
+};
+
+enum VehicleType {
+    SUV,
+    SEDAN
+};
+
+string VehicleTypeParse(int type);
+
 int main()
 {
     // bool isCheck = IsChecked();
@@ -23,7 +42,7 @@ int main()
     // While();
 
     // Input and Output data
-    
+
     /* int x, y;
 
     cout << "Type X value... \n";
@@ -33,32 +52,42 @@ int main()
 
     cout << "Area result is: " << Area(x, y); */
 
-    int age; // 2 or 4 bytes
-    float height; // 4 bytes
-    bool isActive; // 1 byte
-    double salary; // 8 bytes
-    string name; // 
-    char gender;
+    // int age;       // 2 or 4 bytes
+    // float height;  // 4 bytes
+    // bool isActive; // 1 byte
+    // double salary; // 8 bytes
+    // string name;   //
+    // char gender;
 
-    cout << "Your age: \n";
-    cin >> age;
-    cout << "Your name: \n";
-    cin >> name;
-    cout << "Working? \n";
-    cin >> isActive;
-    cout << "Salary pretension: \n";
-    cin >> salary;
-    cout << "Gender \n";
-    cin >> gender;
+    // cout << "Your age: \n";
+    // cin >> age;
+    // cout << "Your name: \n";
+    // cin >> name;
+    // cout << "Working? \n";
+    // cin >> isActive;
+    // cout << "Salary pretension: \n";
+    // cin >> salary;
+    // cout << "Gender \n";
+    // cin >> gender;
 
+    // cout << "---------------------- \n";
+    // cout << "Name: " << name << "\n";
+    // cout << "Age: " << age << "\n";
+    // cout << "Working: " << (isActive == true ? "Yes" : "No") << "\n";
+    // cout << "Salary: " << salary << "\n";
+    // cout << "Gender: " << gender << "\n";
+    // cout << "---------------------- \n";
 
-    cout << "---------------------- \n";
-    cout << "Name: " << name << "\n";
-    cout << "Age: " << age << "\n";
-    cout << "Working: " << (isActive == true ? "Yes" : "No") << "\n";
-    cout << "Salary: " << salary << "\n";
-    cout << "Gender: " << gender << "\n";
-    cout << "---------------------- \n";
+    Car car1;
+
+    car1.id = 1;
+    car1.numOfDoors = 4;
+    car1.name = "BMW";
+    car1.color = "red";
+    car1.type = SEDAN;
+
+    cout << "My car is a " << car1.color << " " << car1.name << " and have " << car1.numOfDoors << " doors, your category is " << car1.type << endl;
+
 
     return 0;
 }
@@ -105,7 +134,9 @@ void If(int x)
     else if (x == 0)
     {
         cout << "It\'s false";
-    } else {
+    }
+    else
+    {
         cout << "The number isn't in the possible values!";
     }
 }
@@ -129,7 +160,8 @@ void Switch(int x)
     }
 }
 
-void While() {
+void While()
+{
     int nOfTrying = 0;
     while (nOfTrying < 5)
     {
