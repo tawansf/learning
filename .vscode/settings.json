@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "xlocale": "cpp",
+        "system_error": "cpp"
+    }
+}
