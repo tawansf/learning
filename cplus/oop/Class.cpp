@@ -10,11 +10,19 @@ public:
         cout << "Constructor";
     }
 
+    User (string name) {
+
+    }
+
     int id;
     string name;
     string email;
     void SendEmailVerification();
 };
+
+User::User(string name) {
+    cout << name << endl
+}
 
 void User::SendEmailVerification()
 {
