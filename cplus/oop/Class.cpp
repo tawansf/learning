@@ -20,10 +20,6 @@ public:
     void SendEmailVerification();
 };
 
-User::User(string name) {
-    cout << name << endl
-}
-
 void User::SendEmailVerification()
 {
     cout << "E-mail sent.";
