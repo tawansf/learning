@@ -7,11 +7,11 @@ class User
 {
 public:
     User() {
-        cout << "Constructor";
+        cout << "Constructor" << endl;
     }
 
-    User (string name) {
-
+    void Validate() {
+        cout << "Validate" << endl;
     }
 
     int id;
@@ -20,9 +20,20 @@ public:
     void SendEmailVerification();
 };
 
+class AdminUser : public User {
+    public:
+        AdminUser() {
+            cout << "admin user constructor" << endl;
+        }
+
+        void Validate() {
+            cout << "validate admin" << endl;
+        }
+};
+
 void User::SendEmailVerification()
 {
-    cout << "E-mail sent.";
+    cout << "E-mail sent." << endl;
 }
 
 int main()
@@ -31,6 +42,9 @@ int main()
     user.id = 1;
     user.name = "Tawan Silva";
     user.email = "email@email.com";
+
+    AdminUser admUser;
+    admUser.Validate();
 
     cout << "Id: " + user.id << endl;
     cout << "Name: " + user.name << endl;
